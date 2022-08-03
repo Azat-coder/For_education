@@ -1,6 +1,9 @@
 export default class MyString {
   constructor(string) {
       this.string = string;
+      this.valueOf = function() {
+        return string.length;
+      };
   }
 
   set string(value) { this._string = value; }
